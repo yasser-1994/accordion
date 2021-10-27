@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+ul {
+  list-style: none;
+}
+.container {
+  width: 500px;
+  margin: auto;
+  padding: 20px;
+  position: absolute;
+  right: 0;
+}
+/* .acc {
+  margin-bottom: ;
+} */
+.container .link {
+  cursor: pointer;
+}
+.container .link a{
+  display: block;
+  width: 100%;
+  background-color: rgb(185, 178, 185);
+  padding: 20px 10px;
+}
+.container section {
+  border: 1px solid #d4d4d4;
+  height: 0;
+  overflow: hidden;
+}
+.container .acc section.down-2 {
+  height: 100%;
+}
+.container section p {
+  padding: 10px;
+  line-height: 1.8;
+}
+/* nav fixed */
+nav {
+  position: fixed;
+  width: 20rem;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: #1c1f2c;
+}
+nav h1 {
+  padding: 20px;
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-bottom: 1px solid;
+}
+nav > ul {
+  display: flex;
+  gap: 1px;
+  flex-direction: column;
+}
+nav > ul > li {
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+nav > ul > li i{
+  margin-right: 15px;
+}
+nav > ul > li .fa-plus{
+  position: absolute;
+  right: 20px;
+  top: 23px;
+  color: white;
+  cursor: pointer;
+}
+nav > ul > li > a {
+  padding: 20px;
+  display: block;
+  width: 100%;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+nav > ul > li a:hover{
+  background-color: rgb(50, 85, 182);
+}
+nav > ul > li ul {
+  display: flex;
+  flex-direction: column;
+  height: 0;
+  overflow: hidden;
+  transition: 0.5s ease-in-out;
+}
+nav > ul > li ul.active {
+  height: auto;
+  transition: 0.5s ease-in-out;
+}
+nav > ul > li ul > li{
+  border-bottom: 1px solid gray;
+}
+nav > ul > li ul > li > a {
+  display: block;
+  width: 100%;
+  display: block;
+  width: 100%;
+  padding: 13px;
+  transition: 0.5s;
+  color: white;
+  font-weight: bold;
+}
+nav > ul > li ul > li:hover{
+  background-color: rgb(50, 85, 182);
+}
+
