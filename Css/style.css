@@ -73,14 +73,9 @@ nav > ul > li {
 nav > ul > li i{
   margin-right: 15px;
 }
-nav > ul > li .fa-plus{
-  position: absolute;
-  right: 20px;
-  top: 23px;
-  color: white;
-  cursor: pointer;
-}
+
 nav > ul > li > a {
+  position: relative;
   padding: 20px;
   display: block;
   width: 100%;
@@ -89,6 +84,18 @@ nav > ul > li > a {
   font-weight: bold;
   text-transform: uppercase;
 }
+nav > ul > li > a .fa-plus, nav > ul > li > a .fa-minus{
+  position: absolute;
+  right: 20px;
+  top:50%;
+  color: white;
+  cursor: pointer;
+  transform: translateY(-50%);
+}
+nav > ul > li > a .fa-minus{
+  display: none;
+}
+
 nav > ul > li a:hover{
   background-color: rgb(50, 85, 182);
 }
